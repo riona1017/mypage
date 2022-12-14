@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <meta name="dispriction" content="sample text sample text sample text sample text sample text sample text sample text sample text sample text">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/resposive.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    
+        <div id="navArea">
+            <nav>
+                <div class="inner">
+                    <ul>
+                        <li><a href="#title">Home</a></li>
+                        <li><a href="#profile"> Profile</a></li>
+                        <li><a href="#skill"> Skill</a></li>
+                        <li><a href="#portfolio"> Portfolio</a></li>
+                        <li><a href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div id="mask"></div>
+
+            <main>
+                <h1>My page</h1>
+            </main>
+
+        </div>
+
+        <!-- タイトル -->
+        <div class="hero">
+            <a id="title"></a>
+            <strong class="title">RIONA KONISHI</strong>
+            <div class="hero-particles"></div>
+            <video autoplay loop muted preload>
+                <source src="assets/videos/hero.mp4" type="video/mp4">
+            </video>
+        
+        </div>
+
+        <!-- プロフィール -->
+        <div class="contents">
+            <a id="profile"></a>
+            <div class="profile">
+                <h2>Profile</h2>
+                <p>小西　莉緒奈（コニシ　リオナ）<br>
+                高校卒業後、ECCアーティスト美容専門学校へ入学 <br>
+                2000年10月17日生まれ<br>
+                美容師アシスタント後、アイリストとして１年勤務。売上全店１位、総接客数全店１位の実績あり。<br>
+                これまでの経験を通して培った感性、コミュニケーション力を活かしたエンジニアになることを目標に勉強中。
+                </p>
+            </div>
+            <div class="image"></div>
+        </div>
+
+        <!-- スキル -->
+        <div class="contents">
+            <a id="skill"></a>
+                <h2>Skill</h2>
+                <p>HTML ＆ CSS <br>
+                JavaScript <br>
+                JQuery や Ruby 等々も独学で勉強中...
+                </p>
+                <section>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-js"></i>
+                </section>
+        </div> 
+
+        <!-- ポートフォリオ -->
+        <div class="contents">
+            <a id="portfolio"></a>
+                <h2>Portfolio</h2>
+                <h3 class="portfolio_menu">過去に制作したポートフォリオです。</h3>
+                <small>画像もしくはタイトルクリックでページ移動</small>
+                <div class="portfolio_main">
+                    <div class="portfolio_container">
+                        <a href="https://riona1017.github.io/dogs_cafe/">
+                            <img class="portfolio_img" src="./assets/images/portfolio1.jpg" alt="ポートフォリオ">
+                        </a>
+                    </div>
+                    <div class="portfolio_sub">
+                        <a href="https://riona1017.github.io/dogs_cafe/"><h3>まとめサイト</h3></a>
+                        <p class="sub">HTML/CSS, lightbox を使用。 <br>
+                        間隔や色味の統一、写真の拡大機能、マップの挿入など見やすさを重視して作成しました。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="portfolio_main">
+                    <div class="portfolio_container">
+                        <a href="https://riona1017.github.io/todolist/">
+                            <img class="portfolio_img" src="./assets/images/portfolio2.jpg" alt="ポートフォリオ">
+                        </a>
+                    </div>
+                    <div class="portfolio_sub">
+                        <a href="https://riona1017.github.io/todolist/"><h3>TODOリスト</h3></a>
+                        <p class="sub">HTML, Bootstrap, JavaScript を使用。 <br>
+                        JavaScriptの機能重視で作成しました。 <br>
+                        リロードしても情報が消えないようローカルストレージを使用しました。
+                        </p>
+                    </div> 
+                </div>
+        </div>
+
+        <!-- コンタクト -->
+        <div class="contents">
+            <a id="contact"></a>
+            <h2>Contact</h2>
+            <div class="content">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="07846340-07e3-43d6-8b1f-669c71f182a4">
+                        <div class="item">
+                            <label class="label">お名前</label>
+                            <input type="text" class="inputs" name="name" required />
+                        </div>
+
+                        <div class="item">
+                            <label class="label">メールアドレス</label>
+                            <input type="email" class="inputs" name="email" required />
+                        </div>
+
+                        <div class="item">
+                            <label class="label">お問合せ内容</label>
+                            <textarea class="inputs" name="message" placeholder="お問合せ内容をご入力ください。" required></textarea>
+                        </div>
+
+                        <div class="button-area">
+                            <input type="submit" value="送信" />
+                            <input type="reset" value="リセット" />
+                        </div>
+                </form>
+            </div>    
+        </div>    
+
+        <!-- フッター -->
+        <div class="footer">
+            <div class="footer_logo">@riona.k</div>
+                <div class="icon">
+                    <a href="https://twitter.com/riona__k"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+        </div>
+
+    
+        <script src="./assets/js/app.js"></script>
+</body>
+</html>
